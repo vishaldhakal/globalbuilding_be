@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'homebabadb',
-        'USER': 'homebaba_admin',
-        'PASSWORD': 'homebabaadminpassword',
+        'NAME': 'globaldb',
+        'USER': 'global_admin',
+        'PASSWORD': 'globaladminpassword',
         'HOST': 'localhost',
         'PORT': '',
     }
