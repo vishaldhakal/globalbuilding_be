@@ -5,7 +5,7 @@ from .models import Category, Product, Inquiry
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ['id', 'name', 'price', 'availability','category', 'meta_title', 'meta_description', 'description', 'image']
+        fields = ['id', 'name', 'price', 'availability','category', 'meta_title', 'meta_description', 'description', 'image','hiked_price','discount_percent','rating']
 
 # Serializer for Category
 class CategorySerializer(serializers.ModelSerializer):
@@ -24,7 +24,7 @@ class CategorySerializer(serializers.ModelSerializer):
 class InquirySerializer(serializers.ModelSerializer):
     class Meta:
         model = Inquiry
-        fields = ['id', 'name', 'email', 'product', 'message', 'created_at']
+        fields = ['id', 'name', 'email', 'products', 'message', 'created_at']
         extra_kwargs = {
             'product': {'required': False, 'allow_null': True}
         }

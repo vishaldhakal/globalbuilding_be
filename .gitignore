@@ -1,2 +1,8 @@
-/db.sqlite3
+/.env
 /media/
+*.py[cod]
+*$py.class
+/env/
+__pycache__/
+*.pyc
+db.sqlite3
